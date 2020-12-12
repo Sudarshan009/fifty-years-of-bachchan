@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import MovieData from '../data/MovieData.json';
 
+
 import Popup from 'reactjs-popup';
 
 
@@ -19,12 +20,12 @@ const handleClose = () => setShow(false);
             {MovieData.map( (Movie, index) => {
                     return (
                       <>
-                  <Popup trigger={  <img className="thumbImg" src={Movie.Thumbnail} onClick={handleShow} />} >
+                  <Popup trigger={ <img className="thumbImg" key={index} src={Movie.Thumbnail} onClick={handleShow} /> } >
                       
                      
                          <div className="modal-content">
             <div className="modal-body">
-                 <button className="close">
+                 <button className="close" onClick={handleClose}>
           &times;
         </button>
              <h2 className="showname">{Movie.name}</h2>

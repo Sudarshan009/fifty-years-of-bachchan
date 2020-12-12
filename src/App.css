@@ -23,18 +23,9 @@ h1.mainTitle {
   border-radius: 5px;
 }
 
-.modal > .close {
-  cursor: pointer;
-  position: absolute;
-  display: block;
-  padding: 2px 5px;
-  line-height: 20px;
-  right: -10px;
-  top: -10px;
-  font-size: 24px;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #cfcece;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popup-overlay {
@@ -65,4 +56,16 @@ p.headerPara {
 
 img.thumbImg {
   margin: 2px;
+  width: 19%;
+  margin: 0 auto;
+  margin-bottom: 6.75px;
+}
+
+@media only screen and (max-width: 600px) {
+  img.thumbImg {
+    margin: 2px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 6.75px;
+  }
 }
