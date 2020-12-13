@@ -15,7 +15,6 @@ h1.mainTitle {
 }
 
 .modal-content {
-  width: 350px;
   text-align: center;
   background: white;
   margin: 0 auto;
@@ -48,7 +47,7 @@ p.headerPara {
   padding: 40px;
 }
 
-.MuiButton-containedSecondary {
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary {
   color: #fff;
   background-color: red;
   margin: 10px;
